@@ -267,5 +267,5 @@ if __name__ == '__main__':
     if train==True:
         Train()
     else:
-        int_to_vocab, vocab_to_int, n_vocab, in_text, out_text = get_data_from_file(flags.train_file, flags.batch_size, flags.seq_size)
+        int_to_vocab, vocab_to_int, n_vocab, in_text, out_text = Get_Info_From_File(flags.train_file, flags.batch_size, flags.seq_size)
         Test(int_to_vocab, vocab_to_int, n_vocab)
