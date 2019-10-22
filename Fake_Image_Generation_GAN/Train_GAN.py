@@ -1,4 +1,4 @@
-import model
+import Model_GAN
 import numpy as np
 from collections import deque
 import math
