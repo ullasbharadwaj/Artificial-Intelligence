@@ -1,4 +1,4 @@
-Code Generation for training DNNs:
+#Automated Code Generation for DNN Training
   
 This script generates a skeleton of Python source file with Model description, Training module and the Dataloader based on the 
 parameter information given by the user which can then be used for training.  
@@ -9,9 +9,10 @@ Current version 0.01 supports code generation for Convolutional Neural Networks 
   
 Example Usage CNN:  
 python code_gen.py --file_name 'Model_Autogen' --network 'CNN' --num_of_conv_FF_layers '[No_ConvLayers, No_DenseLayers]' --CNN_Hyperparameters '[Input_Dim, Filters_layer_1, Filters_layer_2,...., Out_Dim, Dense1, Dense2, Dense_Out, Batch_Normalization(0/1)]'
-  
+
+'''python  
 python code_gen.py --file_name 'Model_Autogen' --network 'CNN' --num_of_conv_FF_layers '[3,2]' --CNN_Hyperparameters '[4,16,32,64,16,512,512,37,1]'
-  
+''' 
 Example Usage FF:  
 python code_gen.py --file_name 'Model_Autogen' --network 'FF' --FF_Hyperparameters '[Number_Hidden_Layers, Input_Dim, Dense1, Dense2,...., Out_Dim]'
   
